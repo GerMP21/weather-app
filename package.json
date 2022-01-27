@@ -1,5 +1,5 @@
 {
-  "name": "svelte-app",
+  "name": "weather-app",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -10,14 +10,29 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
+    "@rollup/plugin-replace": "^3.0.1",
+    "dotenv": "^14.3.2",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-livereload": "^2.0.0",
     "rollup-plugin-svelte": "^7.0.0",
     "rollup-plugin-terser": "^7.0.0",
-    "svelte": "^3.0.0"
+    "svelte": "^3.0.0",
+    "svelte-geolocation": "^0.3.0"
   },
   "dependencies": {
     "sirv-cli": "^2.0.0"
-  }
+  },
+  "description": "*Psst — looking for a more complete solution? Check out [SvelteKit](https://kit.svelte.dev), the official framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing.*",
+  "main": "rollup.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GerMP21/weather-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GerMP21/weather-app/issues"
+  },
+  "homepage": "https://github.com/GerMP21/weather-app#readme"
 }
