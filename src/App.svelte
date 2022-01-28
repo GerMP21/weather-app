@@ -3,7 +3,7 @@
 	import WeatherCard from "./WeatherCard.svelte";
 	let coords = [];
 	
-	const fetchOpenWeather = async (lat, lon) => {
+	const fetchOpenWeather = async (lon, lat) => {
 		const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${OPEN_WEATHER_API_KEY}`);
 		const data = response.json();
 		return data;
@@ -13,7 +13,7 @@
 <Geolocation getPosition bind:coords />
 
 <header>
-	Svelte weather-app
+	Svelte Weather-App
 </header>
 
 {#await fetchOpenWeather(coords[0], coords[1])}
